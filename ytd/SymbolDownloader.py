@@ -25,15 +25,16 @@ class SymbolDownloader:
     def _fetchHtml(self, insecure):
         query_string = {
                 's': self.current_q,
-                't': self.type[0],
-                'm': 'ALL',
+				'bypass':'true',
+                't': 'A',
+                'm': 'SG',
                 'r': '',
                 'b': str(self.current_q_item_offset)
             }
 
         protocol = 'http' if insecure else 'https'
         user_agent = {'User-agent': 'yahoo-ticker-symbol-downloader'}
-        req = requests.Request('GET', protocol+'://finance.yahoo.com/lookup/',
+        req = requests.Request('GET', protocol+'://finance.yahoo.com/lookup/stocks?',
                 headers=user_agent, params=query_string)
         req = req.prepare()
         print("req " + req.url) # Used for debugging
