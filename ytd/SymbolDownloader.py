@@ -25,7 +25,7 @@ class SymbolDownloader:
     def _fetchHtml(self, insecure):
         query_string = {
                 's': self.current_q,
-				'bypass':'true',
+		'bypass':'true',
                 't': 'A',
                 'm': 'SG',
                 'r': '',
