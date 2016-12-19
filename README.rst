@@ -1,4 +1,6 @@
-Yahoo ticker downloader
+EDITED VERSION OF YAHOO TICKER FOR SG STOCKS DOWNLOAD
+
+Yahoo ticker downloader by https://github.com/Benny-/Yahoo-ticker-symbol-downloader
 =======================
 
 Produces .csv, .json, .yaml, and .xls files (All files contain same data in a
