@@ -26,7 +26,7 @@ class SymbolDownloader:
         query_string = {
                 's': self.current_q,
 		'bypass':'true',
-                't': 'S',
+                't': self.type[0],
                 'm': 'SG',
                 'r': '',
                 'b': str(self.current_q_item_offset)
